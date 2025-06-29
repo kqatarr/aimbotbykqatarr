@@ -1,8 +1,3 @@
-game.StarterGui:SetCore("SendNotification", {
-    Title = 'use carefully.';
-    Text = 'kqatarrs aimbot code';
-    Duration = 8;
-  })
 local Camera = workspace.CurrentCamera
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
@@ -23,17 +18,6 @@ _G.CircleRadius = 80 -- The radius of the circle / FOV.
 _G.CircleFilled = false -- Determines whether or not the circle is filled.
 _G.CircleVisible = true -- Determines whether or not the circle is visible.
 _G.CircleThickness = 0 -- The thickness of the circle.
-
-local FOVCircle = Drawing.new("Circle")
-FOVCircle.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
-FOVCircle.Radius = _G.CircleRadius
-FOVCircle.Filled = _G.CircleFilled
-FOVCircle.Color = _G.CircleColor
-FOVCircle.Visible = _G.CircleVisible
-FOVCircle.Radius = _G.CircleRadius
-FOVCircle.Transparency = _G.CircleTransparency
-FOVCircle.NumSides = _G.CircleSides
-FOVCircle.Thickness = _G.CircleThickness
 
 local function GetClosestPlayer()
 	local MaximumDistance = _G.CircleRadius
